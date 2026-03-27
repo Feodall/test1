@@ -3,7 +3,9 @@ import {Sign} from './components/Sign'
 import {Users} from './components/Users'
 import {Competences} from './components/Competences'
 import {Home} from './components/Home'
+import {Footer} from './components/Footer'
 import {Routes, Route} from 'react-router-dom'
+
 
 const App = () => {
   return(
@@ -15,6 +17,7 @@ const App = () => {
         <Route path="/auth" element={<Competences />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer/>
     </div>
   )
 }
