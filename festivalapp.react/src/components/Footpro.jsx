@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const Footer = () =>{
+export const Footpro = () =>{
     return (
     <div className="footer">
         <h2>мы всегда на связи</h2>

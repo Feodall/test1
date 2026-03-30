@@ -11,12 +11,16 @@ const App = () => {
   return(
     <div className = "container">
       <Header/>
-      <Routes>
-        <Route path="/sign" element={<Sign />} />
-        <Route path="/users" element={<Users />} />
-        <Route path="/auth" element={<Competences />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="home">
+        <Routes>
+          <Route path="/sign" element={<Sign />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/auth" element={<Competences />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+      <Footer/>
+
       <Footer/>
     </div>
   )

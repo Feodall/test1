@@ -34,13 +34,13 @@
   box-sizing: border-box;
 }
 
-header{
+/* header{
   background-color: var(--accent);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 a:link, a:visited{
   text-decoration: none;
@@ -51,7 +51,19 @@ a:hover, a:active{
   color: white;
 }
 
-.logo{
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home{
+  display: flex;
+  flex: 1;
+}
+
+
+/* .logo{
   
   font-size: 2rem;
   font-weight: 300;
@@ -60,13 +72,13 @@ a:hover, a:active{
     color: white;
     cursor:pointer;
   }
-}
+} */
 
-.menu{
+/* .menu{
   display: flex;
   gap: 1rem;
   list-style: none;
-}
+} */
 
 .active{
   color: white;
@@ -99,6 +111,78 @@ a:hover, a:active{
   margin: 1rem;
 }
 
+
+.logo{
+  display: flex;
+  margin: 10px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  /* background-color: #000; */
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
 .footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   border-top: 1px solid #000;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.footer_button{
+  display: flex;
+  margin-left: 1rem;
+  padding: 10px;
+}
+
+.pro_img{
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.pro_text_img{
+  position: absolute;
+  top: 40%;
+  right: 3%;
+  width: 25%;
+  font-weight: 900;
+  font-size: 2.3vw !important;
+  color: #faf500c9;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.pro_text{
+  margin: 10px;
+  align-content: center;
+}
+
+.pro{
+  flex: 1;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  margin: 20px 140px;
+}
+.img1{
+  display: flex;
+}
+
+.pro_text__img1{
+  position: absolute;
+  top: 50%;
 }

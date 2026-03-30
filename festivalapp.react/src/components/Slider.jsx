@@ -10,6 +10,6 @@ export const Slider = () => {
         if(number == 5) setNumber(1)
     }
 
-    setInterval(() => {setSlider(`test${number}.png`); hedeleNumber()}, 1000)
+    setInterval(() => {setSlider(`test${number}.png`); hedeleNumber()}, 5000)
     return(<img src={slider} className="slider"/>)
 }
