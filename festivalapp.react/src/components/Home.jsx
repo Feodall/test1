@@ -9,7 +9,7 @@ export const Home = () => {
 
     const getUsers = async () => {
     
-        var response = await axios.get("http://localhost:5135/api/Users");
+        var response = await axios.get("http://localhost:5142/api/Users");
         console.log(response);
         setUsers(response.data);
     };
